@@ -44,8 +44,8 @@ export class Cart extends Component {
               borderTop: "2px solid #d1d5db",
             }}
           >
-            {items?.map((item) => (
-              <CartModalCard cart item={item} key={item.id} />
+            {items?.map((item, count) => (
+              <CartModalCard cart item={item} key={count + item.id} />
             ))}
           </InnerFirstDiv>
         </FirstDiv>

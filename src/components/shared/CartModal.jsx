@@ -59,8 +59,8 @@ export class CartModal extends Component {
                       overflowX: "hidden",
                     }}
                   >
-                    {items.map((item) => (
-                      <CartModalCard item={item} key={item.id} />
+                    {items.map((item, count) => (
+                      <CartModalCard item={item} key={count + item.id} />
                     ))}
                   </div>
                 </HeaderDiv>
