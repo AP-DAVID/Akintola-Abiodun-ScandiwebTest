@@ -33,7 +33,7 @@ export const InnerFirstDiv = styled.div`
 `;
 
 export const Text = styled.h4`
-  color: #918e8f;
+  color: #4d4b4b;
 `;
 
 export const Span = styled.span`
