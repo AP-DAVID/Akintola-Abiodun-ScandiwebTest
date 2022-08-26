@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import {BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Category from "./components/Category";
-import Product from "./components/Product";
-import Cart from "./components/Cart";
+import Category from "./pages/Category";
+import Product from "./pages/Product";
+import Cart from "./pages/Cart";
 
 export class Routerr extends Component {
   render() {
@@ -28,7 +28,7 @@ export class Routerr extends Component {
           <Route path="/:id">
             {" "}
             <div className="overflow-y-auto overflow-x-hidden">
-              <Category />
+              <Category/>
             </div>
           </Route>
         </Switch>

@@ -44,7 +44,7 @@ export class CartModal extends Component {
                 }}
               >
                 {/*header*/}
-                <HeaderDiv style={{overflowY : "scroll"}}>
+                <HeaderDiv style={{ overflowY: "scroll" }}>
                   <HeaderText>
                     My Bag,{" "}
                     <span style={{ color: "gray" }}>

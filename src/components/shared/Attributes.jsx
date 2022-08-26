@@ -14,7 +14,8 @@ export class Attributes extends Component {
               textTransform: cart && "uppercase",
               marginTop: "15px",
               fontSize: "1rem",
-              color: cart ? "#211d1d" : "#3d3a3a",
+              fontWeight: 600,
+              color: cart ? "black" : "#3d3a3a",
             }}
           >
             {attribute?.id}:

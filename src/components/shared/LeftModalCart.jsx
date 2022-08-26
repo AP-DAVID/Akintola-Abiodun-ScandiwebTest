@@ -1,23 +1,20 @@
 import React, { Component } from "react";
 import Attributes from "./Attributes";
-import {
-  MainDiv,
-  
-} from "./styled/LeftCard.styled";
+import { MainDiv } from "./styled/LeftCard.styled";
 
 export class LeftModalCart extends Component {
   render() {
-         const {
-           name,
-           brand,
-           prices,
-           attributes,
-           gallery,
-           quantity,
-           selectedAttributes,
-         } = this.props.item;
+    const {
+      name,
+      brand,
+      prices,
+      attributes,
+      gallery,
+      quantity,
+      selectedAttributes,
+    } = this.props.item;
 
-        const {cart} = this.props
+    const { cart } = this.props;
     return (
       <MainDiv
         style={{ marginLeft: "0rem", marginTop: "0px" }}
@@ -27,7 +24,7 @@ export class LeftModalCart extends Component {
           style={{
             marginBottom: " 5px",
             fontSize: cart ? "1.5rem" : "1rem",
-            color: cart ? "#211d1d" : "#3d3a3a",
+            color: cart ? "#black" : "#3d3a3a",
             width: 100,
           }}
         >
@@ -51,7 +48,7 @@ export class LeftModalCart extends Component {
             style={{
               marginTop: "0.25rem",
               marginBottom: "-10px",
-              color: "#3d3a3a",
+              color: "black",
               fontWeight: cart ? 600 : 600,
               fontSize: "0.8rem",
               width: 100,

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import Checkout from "./shared/Checkout";
+import Checkout from "../components/shared/Checkout";
 import { getProduct, resetProduct } from "../redux/productSlice";
-import Header from "./shared/Header";
+import Header from "../components/shared/Header";
 import { addToCart } from "../redux/cart";
 import { withRouter } from "react-router-dom";
 import {
@@ -11,7 +11,7 @@ import {
   MiddleImg,
   ImageRes,
   InnerRes,
-} from "./styled/Product.Styled";
+} from "../components/styled/Product.Styled";
 
 const mapStateToProps = (state) => {
   const { product, loading } = state.product;
@@ -48,7 +48,6 @@ export class Product extends Component {
 
   // add  to cart
   addToCart = () => {
-
     // set up product to be added to the cart
     const product = {
       ...this.props.product,
@@ -80,7 +79,6 @@ export class Product extends Component {
           (p) => p?.currency?.label === selectedCurrency.label
         )
       : 0;
-
 
     return (
       <div>

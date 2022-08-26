@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import Cartcard from "./shared/Cartcard";
 import { connect } from "react-redux";
-import Header from "./shared/Header";
+import Header from "../components/shared/Header";
 
 import {
   FirstText,
@@ -11,8 +10,8 @@ import {
   Text,
   Span,
   Button,
-} from "./styled/Cart.styled";
-import CartModalCard from "./shared/CartModalCard";
+} from "../components/styled/Cart.styled";
+import CartModalCard from "../components/shared/CartModalCard";
 
 const mapStateToProps = (state) => {
   const { items, itemsQuantity, totalPrice } = state.cart;

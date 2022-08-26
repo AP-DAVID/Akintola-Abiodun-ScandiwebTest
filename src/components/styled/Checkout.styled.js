@@ -69,12 +69,11 @@ export const ButtonDiv = styled.button`
   cursor: pointer;
 `;
 
-export const TextDiv = styled.div`
+export const TextDiv = styled.h5`
   object-fit: cover;
-
   padding-right: 0.75rem;
   margin-top: 1.25rem;
-
+  font-weight : 100;
   @media (min-width: 640px) {
     padding-left: 0;
     padding-right: 0;

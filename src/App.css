@@ -1,6 +1,11 @@
 
 
-.font-link {
-  font-family: 'Montserrat';
+
+body {
+   font-family: 'Raleway', sans-serif;
+   line-height: 1;
+   margin: 0;
+   font-size: 100%;
+  padding: 0;
 }
 
