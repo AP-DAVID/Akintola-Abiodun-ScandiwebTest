@@ -66,7 +66,7 @@ export class Cart extends Component {
             <Span>
               {" "}
               {selectedCurrency && selectedCurrency.symbol}{" "}
-              {totalPrice[selectedCurrency.label]}
+              {parseFloat(totalPrice[selectedCurrency.label]).toFixed(2)}
             </Span>
           </Text>
 
